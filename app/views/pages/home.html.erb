@@ -15,13 +15,13 @@
         </div>
         <%-# End Sidebar -%>
 
-        <%-# Begin Category List -%>
-        <div id="video-box" class="col-sm-8 col-sm-offset-4">
+        <%-# Begin Video Box -%>
+        <div id="video-box" class="col-sm-6 col-sm-offset-5">
             <% @categories.each do |category| %>
                 <%= render partial: "/components/category_card", locals: {category: category} %>
             <% end %>
         </div>
-        <%-# End Category List -%>
+        <%-# End Video Box -%>
 
 
     </div>
